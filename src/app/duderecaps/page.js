@@ -26,9 +26,6 @@ export default async function DudeRecaps () { // START OF DudeRecaps () //
       </div>
     })}
 
-
-
-
         </div>
     
     

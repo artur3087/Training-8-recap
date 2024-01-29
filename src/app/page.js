@@ -34,15 +34,7 @@ return ( // START for returning inside Home () //
 ) // END of returning inside Home () //
 
 
-
-
-
 }; // END of default function Home () //
-
-
-
-
-
 
 
 

@@ -1,6 +1,8 @@
 body {
   background-color:beige;
   color: black;
+  
+  
 }
 
 
@@ -15,6 +17,11 @@ h3 {
   font-weight: 900;
 }
 
+h5 {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
 p {
   display: flex;
   justify-content: center;
@@ -22,3 +29,8 @@ p {
  
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}

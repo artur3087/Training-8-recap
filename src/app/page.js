@@ -1,3 +1,6 @@
+
+// !!! I create all the functionality for a wesite below !!! //
+
 export default function Home () { // START of default function Home () //
 
 
@@ -34,4 +37,17 @@ return ( // START for returning inside Home () //
 
 
 
-} // END of default function Home () //
+}; // END of default function Home () //
+
+
+
+
+
+
+
+
+// Database should look like this: //
+
+// ("Duderecap1", "importance: high",  "time: long",  true)
+// ("Duderecap2", "importance: low",  "time: too long",  false)
+// ("Duderecap3", "importance: low", "time: infinity of boredom", false)

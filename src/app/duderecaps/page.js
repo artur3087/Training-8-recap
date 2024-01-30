@@ -15,7 +15,7 @@ export default async function DudeRecaps () { // START OF DudeRecaps () //
     return ( // START OF return FOR DudeRecaps //
     
         <div>
-            <h2>Dudes' Recap Page</h2>
+            <h2>Dudes&apos; Recap Page</h2>
             <p> Recap that! Duuuudee! </p>
             {dudes.rows.map((duderecap) => {
 

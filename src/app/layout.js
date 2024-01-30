@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         
         <h1>RECAPweek8</h1>
-        <p> Sounds great! Just kidding! It's awful</p>
+        <p> Sounds great! Just kidding! It&apos; awful</p>
         <h5>
         <Link href="/">MAINrecapPAGE</Link>
         <Link href="/duderecaps">DUDErecaps</Link>

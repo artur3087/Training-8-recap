@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
         <h5>
         <Link href="/">MAINrecapPAGE</Link>
         <Link href="/duderecaps">DUDErecaps</Link>
+        <Link href="/dudecomments">DUDEpostsANDcomments</Link>
         </h5>
         {children}</body>
     </html>

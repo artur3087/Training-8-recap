@@ -8,7 +8,9 @@ body {
 h1, h2, h4 {
   display: flex;
   justify-content: center;
+  gap: 5px;
 }
+
 
 h3 {
   display: flex;
@@ -19,7 +21,7 @@ h3 {
 h5 {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 p {
   display: flex;
@@ -30,8 +32,9 @@ p {
 
 nav {
   display: flex;
-  justify-content: center;
-  gap: 10rem;
+  justify-content: left;
+  margin-left: 200px;
+  gap: 1rem;
 }
 
 form {
@@ -54,4 +57,138 @@ textarea {
 button {
   height:
   35px;
+}
+
+.cl-socialButtonsBlockButtonText {
+  color: bisque;
+  
+  display: flex;
+  justify-content: left;
+  margin-left: 5px;
+  height: 20px;
+ 
+  
+}
+
+.cl-internal-16pk7q8 {
+
+height: 200px;
+width: 150px;
+
+}
+.cl-signIn-start {
+  margin-left: 500px;
+  
+}
+.cl-headerSubtitle {
+  display: flex;
+  justify-content: center;
+  
+  color: bisque;
+  
+  opacity: 80%;
+}
+
+.cl-internal-16pk7q8 {
+  color: white;
+  font-weight: 900;
+
+  
+}
+.cl-card {
+  color: red;
+ 
+  display: flex;
+  background-image: url(./photos/The-Big-Lebowski-hp-GQ-25Feb16_rex_b.webp);
+  background-size:cover;
+  opacity: 90%;
+  font-size: large;
+}
+
+.cl-formFieldInput {
+  height: 25px;
+  color:white;
+}
+
+
+.cl-footerActionText {
+  
+  color: bisque;
+  font-size: large;
+  
+  
+  
+}
+
+.cl-footerActionLink {
+  font-size: large;
+  font-weight: 900;
+  color: white;
+  
+}
+
+.cl-formFieldLabel {
+  color: white;
+  
+  margin-top: 120px;
+  
+}
+
+.cl-formButtonPrimary {
+ 
+  color: white;
+  
+  font-size: large;
+  font-weight: 900;
+}
+.cl-headerTitle {
+  color: red;
+}
+
+.cl-formButtonPrimary:hover{
+  background-color: transparent;
+}
+
+.cl-userPreviewSecondaryIdentifier {
+  color: red;
+}
+
+.path {
+  color: red;
+ 
+}
+
+.cl-pageScrollBox {
+  background-image: none;
+}
+
+.cl-navbarButton {
+  color: white;
+}
+
+.cl-headerSubtitle {
+  color: white;
+  font-size: large;
+}
+
+.cl-profileSectionTitleText {
+  color: white;
+}
+
+.cl-accordionTriggerButton {
+  color: white;
+  width: auto;
+}
+
+.cl-internal-l1ab9q {
+  color: bisque;
+}
+
+
+.cl-userButtonPopoverActionButtonIconBox {
+  color: white;
+}
+
+.cl-userButtonPopoverActionButtonText {
+  color: white;
 }

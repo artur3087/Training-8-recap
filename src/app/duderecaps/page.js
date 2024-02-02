@@ -1,3 +1,6 @@
+// duderecaps page.js //
+
+
 // I import all necessary stuff for my dude page //
 
 import {sql} from "@vercel/postgres" // importing sql from vercel / postgress :D :D :D //

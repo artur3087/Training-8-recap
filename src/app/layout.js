@@ -34,15 +34,15 @@ export default async function RootLayout({ children }) {
         {!userId && <Link href="/sign-in">Sign in, dude!</Link>} 
       </nav>
         
-        <h1>RECAPweek8</h1>
+        <h2>DudeBook Posts:</h2>
 
 
-        <p> Sounds great! Just kidding! It&apos; awful</p>
+        <p> Dudes can make posts too! </p>
         
         <h5>
-        <Link href="/">MAINrecapPAGE</Link>
-        <Link href="/duderecaps">DUDErecaps</Link>
-        <Link href="/dudecomments">DUDEpostsANDcomments</Link>
+        <Link href="/">HOME PAGE</Link>
+        <Link href="/duderecaps">DUDE PAST&apos; POSTS</Link>
+        <Link href="/dudeposts">WRITE A POST </Link>
         
         </h5>
        

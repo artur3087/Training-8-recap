@@ -7,7 +7,7 @@ import { authMiddleware } from "@clerk/nextjs";
     
 export default authMiddleware({  // START of authMiddleware //
     
-    publicRoutes: ["/", "/duderecaps"],
+    publicRoutes: ["/", "/duderecaps", "/admin"],
 
 
 }); // END of authMiddleware //

@@ -59,6 +59,12 @@ button {
   35px;
 }
 
+.postediting {
+  display: flex;
+  justify-content: center;
+}
+
+
 .cl-socialButtonsBlockButtonText {
   color: bisque;
   

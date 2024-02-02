@@ -1,14 +1,22 @@
+// dudecomments page.js //
+
+
 // Below I import some dude's stuff //
 import {sql} from "@vercel/postgres";
 
 import { revalidatePath } from "next/cache";
 
+import Link from "next/link";
+
+
+
+
+ 
 // Below - default function created for dudes who will be able to post and comment on recaps //
 
-export default async function DudeComments () { // START of a default function DudeComment () //
-
+export default async function DudePosts () { // START of a default function DudePosts () //
     // variables: //
-    const posts = await sql`SELECT * FROM posts`;
+    const posts = await sql`SELECT * FROM posts ORDER BY id`;
     
     console.log(posts); 
 
@@ -18,14 +26,16 @@ export default async function DudeComments () { // START of a default function D
         const content = formData.get("content")
 
         console.log(title, content)
+
         await sql`INSERT INTO posts (title, content) VALUES (${title}, ${content})`;
 
-        revalidatePath("/dudecomments")
+        revalidatePath("/dudeposts");
+        
     }
     
 
 
-return ( // return START for DudeComments() // 
+return ( // return START for DudePosts() // 
 
 
     <div>
@@ -34,16 +44,22 @@ return ( // return START for DudeComments() //
         </h2>
         <form action={handleCreatePost}>
         
-        <h4>Add a new content, dude:</h4>
-            <input name="title" placeholder="title" />
-            <textarea name="content" placeholder="content"></textarea>
+        <h4>Add a new post, dude:</h4>
+            <input name="title" placeholder="Make a title, dude!" />
+            <textarea name="content" placeholder="Write some content, dude ;)"></textarea>
             <button>SUBMIT</button>
         </form>
+
+
         {posts.rows.map((post) => {
-        return <div key={post.title}>
+        return (
+        <Link key={post.title} href={`/dudeposts/${post.id}`}>
+            <p>{post.id}</p>  {/* I will delete this line later */}
             <h4>{post.title}</h4>
             <p>{post.content}</p>
-           </div>
+            
+           </Link>
+        );
         })}
         
       </div>

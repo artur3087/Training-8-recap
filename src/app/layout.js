@@ -9,7 +9,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "RECAPweek8",
+  title: "Dudebook",
   description: "RECAPING things is vital!",
 };
 
@@ -24,24 +24,33 @@ export default async function RootLayout({ children }) {
   
 
   return (
+    
     <ClerkProvider>
+      
     <html lang="en">
+    
       <body className={inter.className}>
-     
+      <h6>Dudes can write posts too!</h6>
       <nav>
-        <p>Dude:</p>
+      <img className = "logoicon" src="./favicon.ico" width="50" height="50"></img>
+     
+        <Link classneme="Dudebook" href="/">Dudebook</Link>
+        
+        
         {userId && <UserButton ID = "userbutton" afterSignOutUrl="/" />}
         {!userId && <Link href="/sign-in">Sign in, dude!</Link>} 
       </nav>
         
+        
         <h2>DudeBook Posts:</h2>
 
 
-        <p> Dudes can make posts too! </p>
+       <br/>
         
         <h5>
+        
         <Link href="/">HOME PAGE</Link>
-        <Link href="/duderecaps">DUDE PAST&apos; POSTS</Link>
+        <Link href="/duderecaps">DUDE&apos; PAST POSTS</Link>
         <Link href="/dudeposts">WRITE A POST </Link>
         
         </h5>

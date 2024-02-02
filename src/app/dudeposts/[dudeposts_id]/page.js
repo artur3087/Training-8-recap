@@ -37,7 +37,7 @@ export default async function SinglePostPage ({params}) { // START of SinglePost
             <br></br>
             <h2>{post.rows[0].title}</h2>
             <p>{post.rows[0].content}</p>
-            <Link className = "postediting" href = {`/dudeposts/${params.dudeposts_id}/edit`}>Dude, want to edit it?</Link>
+            <Link className = "postediting" href = {`/dudeposts/${params.dudeposts_id}/edit`}>Dude, ... want to edit it?</Link>
 
             <form action = {handleAddComment}>
                 <br></br>

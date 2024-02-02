@@ -7,7 +7,7 @@ export default function Home () { // START of default function Home () //
   // Below I show a way of making array which will HARDCODE list of whatever I need - it will be a list of recaps //
 
   const recaps = [   // START of array recaps //
-    { name: "Rule 1:", importance: "BE RESPECTFUL", time: "ALWAYS on this page when you make a posts.", vital: true},
+    { name: "Rule 1:", importance: "BE RESPECTFUL", time: "ALWAYS! ... when you make a posts.", vital: true},
     { name: "Rule 2:", importance: "NO POLITICS", time: "YOU WILL BE BANNED FROM PAGE AFTER COMMENTING OR POSTING ABOUT POLITICS", vital: false},
     {name: "Rule 3:", importance: "NO TROLLING", time: "EVERY TROLLING done by dudes will be moderated and author banned", vital: true},
   ]; // END of array recaps //
@@ -18,8 +18,10 @@ return ( // START for returning inside Home () //
 
 
   <div>
+    <br></br>
     <h2>HOME PAGE:</h2>
-    <h3>Main:</h3>
+    <p>We are dudes. This website is to post a random posts... but you need to respect our 3 rules, dude:</p>
+    <h3>Our rules:</h3>
     {recaps.map((recap) => {
       return <div className="array" key={recap.name}>
         <h4>{recap.name} {recap.importance} - {recap.time}</h4>

@@ -46,6 +46,13 @@ nav {
 .comment {
   display: flex;
   justify-content: center;
+  gap: 1rem;
+}
+.commentedit {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  
 }
 
 form {

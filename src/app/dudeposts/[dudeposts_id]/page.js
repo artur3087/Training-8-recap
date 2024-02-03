@@ -50,15 +50,18 @@ export default async function SinglePostPage ({params}) { // START of SinglePost
 
             {comments.rows.map((comment) => { {/*START OF maping */}
 
-                return (<div key = {comment.id} className="comment">
+                return (<div key = {comment.id} >
 
                     
-                    <h3>{comment.username}</h3>
-                    <p>{comment.content}</p>
-                    <Link href={`/dudeposts/${params.dudeposts_id}/comments/${comment.id}/edit `} >
-                        EDIT
-                    </Link>
+                    <h3>{comment.username}:
+                    </h3>
                     
+                    <p>{comment.content}</p>
+                    <div className="commentedit">
+                    <Link href={`/dudeposts/${params.dudeposts_id}/comments/${comment.id}/edit `} >
+                        EDIT, dude?
+                    </Link>
+                    </ div>
                     </div>
                    
                     

@@ -30,7 +30,7 @@ export default async function EditComment({params}) { // START of function EditC
 return ( // START of return for Main function //
 
 <div>
-    <h2>EDIT YOUR COMMENT, DUDE?</h2>
+    <h2>EDIT YOUR POST, DUDE?</h2>
     <form action ={handleEditedComment}>
         <h3>Add a comment</h3>
         <input name="username" placeholder="Dudesname (username)" defaultValue={comment.rows[0].username} />

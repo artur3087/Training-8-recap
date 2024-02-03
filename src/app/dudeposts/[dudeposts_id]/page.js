@@ -50,9 +50,7 @@ export default async function SinglePostPage ({params}) { // START of SinglePost
 
             {comments.rows.map((comment) => { {/*START OF maping */}
 
-                return (
-                    
-                   <div className="comment" key = {comment.id}>
+                return (<div className="comment" key = {comment.id}>
 
                     
                     <h3>{comment.username}</h3>

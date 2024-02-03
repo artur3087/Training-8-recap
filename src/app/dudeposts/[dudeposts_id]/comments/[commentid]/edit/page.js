@@ -14,8 +14,9 @@ export default async function EditComment({params}) { // START of function EditC
     const comment = await sql`SELECT * FROM comments where id = ${params.commentid}`;
 
     // async function inside function EditComment:
-    async function handleEditedComment{FormData} { // START of function handleEditedComment //
-    
+    async function handleEditedComment(formData) { // START of function handleEditedComment //
+    "use server"
+
     //variables:
     const username = formData.get("username");
     const content = formData.get("content");
@@ -34,6 +35,7 @@ return ( // START of return for Main function //
         <h3>Add a comment</h3>
         <input name="username" placeholder="Dudesname (username)" defaultValue={comment.rows[0].username} />
         <textarea name="content" placeholder="Content" defaultValue = {comment.rows[0].content} />
+    <button>SUBMIT</button>
     </form>
 </div>
 

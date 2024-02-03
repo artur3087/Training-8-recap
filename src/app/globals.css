@@ -43,7 +43,10 @@ nav {
   margin-top: 20px;
 }
 
-
+.comment {
+  display: flex;
+  justify-content: center;
+}
 
 form {
   display: flex;

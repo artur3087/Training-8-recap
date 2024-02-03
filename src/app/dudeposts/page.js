@@ -8,31 +8,35 @@ import { revalidatePath } from "next/cache";
 
 import Link from "next/link";
 
+import { redirect } from "next/dist/server/api-utils";
+
+import { auth } from "@clerk/nextjs";
 
 
-
- 
 // Below - default function created for dudes who will be able to post and comment on recaps //
 
 export default async function DudePosts () { // START of a default function DudePosts () //
     // variables: //
     const posts = await sql`SELECT * FROM posts ORDER BY id`;
+
+    const { userId } = auth(); // For a long time I was looking of a cause of why it does not show user ids in database...   it turned out to be a syntasx error:
+    // I written auth; without any brackets before. It is lovely how such a thing can waste your time LOL //
     
-    console.log(posts); 
+    // console.log(posts); 
 
     async function handleCreatePost(formData) {
         "use server";
         const title = formData.get("title")
         const content = formData.get("content")
 
-        console.log(title, content)
+        console.log(title, content, userId)
 
-        await sql`INSERT INTO posts (title, content) VALUES (${title}, ${content})`;
+        await sql`INSERT INTO posts (title, content, User_id) VALUES (${title}, ${content}, ${userId})`;
 
         revalidatePath("/dudeposts");
         
     }
-    
+     
 
 
 return ( // return START for DudePosts() // 

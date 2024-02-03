@@ -10,3 +10,8 @@ CREATE TABLE comments (
     content text,
     post_id INT REFERENCES posts(id)
 )
+
+ALTER TABLE posts ADD user_id text
+
+ALTER TABLE comments ADD user_id text
+

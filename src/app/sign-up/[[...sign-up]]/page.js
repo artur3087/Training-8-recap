@@ -3,7 +3,8 @@
 
 import { SignUp } from "@clerk/nextjs";
  
-export default function Page() {
+export default function Page4signUP() {
   return <SignUp />;
+ 
 }
 

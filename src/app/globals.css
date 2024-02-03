@@ -121,7 +121,8 @@ width: 150px;
   color: red;
  
   display: flex;
-  background-image: url(./photos/The-Big-Lebowski-hp-GQ-25Feb16_rex_b.webp);
+  background-color:darkblue;
+  /* background-image: url(./photos/The-Big-Lebowski-hp-GQ-25Feb16_rex_b.webp); */
   background-size:cover;
   opacity: 90%;
   font-size: large;
@@ -208,4 +209,8 @@ width: 150px;
 
 .cl-userButtonPopoverActionButtonText {
   color: white;
+}
+
+.cl-formFieldInput {
+  color: black;
 }

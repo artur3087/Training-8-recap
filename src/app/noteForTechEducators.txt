@@ -1,0 +1,45 @@
+Is it actually ok to write notes here?
+---------------------------------------
+
+I have not finished my project for this week. 
+However: I have posted this code, which I work on, because I know that it meets at least 1 requirement from assignment of week 9.
+
+Originally it was a recap page for week 8 and week 9 and it did not meant to be assignment work for week 9 but I am running
+out of time more often due to a fact that I need to work for DELIVEROO in a weekends, plus my internet plays up recently, which slows me even more.
+---------------------------------------
+
+this work?
+I believe that it is a solid base for future developments - making more features, functionality and appearance. 
+Thus: I will continue improving this page. 
+
+----------------------------------------
+
+In globals css I used a picture for a background for: .cl-card:
+/* background-image: url(./photos/The-Big-Lebowski-hp-GQ-25Feb16_rex_b.webp); */
+
+This was commented out to make all the letters more visible for you, instead I adopted a blue background color for sign in page.
+I had to do it because there is much more further work on styling this page. 
+
+
+----------------------------------------
+
+FUNCTIONALITY I created so far:
+
+App is able to: 
+1. log in/out a user and for him to create his username. 
+2. It shows array of objects with rules for this page - simple hardcoded array in home page.
+3. It shows dude's past posts, which are array of objects called from sql database. App is connected to vercel sql database. 
+4. After logging in user can add his posts in 'WRITE A POST PAGE'. This page is connected to database with posts and comments tables.
+5. User can edit his post. 
+6. User can comment under the post and edit this comment. 
+7. User will not see posts if he is not logged in. 
+8. User's idea, after logging in, can be seen in vercel database.
+9. Favicon is used to show icon of a 'dude' on every page.
+
+
+-----------------------------------------
+
+CONCERNS: 
+1. I tested this app on mobile phone and it is not possible to use Clerk via android system for some reason. 
+    I have tried to log in via mobile phone and on click at 'sign in' button and 'make a post', NOTHING HAPPENS.
+    I DO NOT KNOW how to fix that problem.
